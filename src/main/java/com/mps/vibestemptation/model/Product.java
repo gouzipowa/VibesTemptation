@@ -18,10 +18,6 @@ public class Product implements Serializable {
 	@Id
 	private int id;
 
-	@Temporal(TemporalType.TIMESTAMP)
-	@Column(name="created_at")
-	private Date createdAt;
-
 	private String icon;
 
 	@Lob
@@ -43,11 +39,18 @@ public class Product implements Serializable {
 	@Column(name="short_description")
 	private String shortDescription;
 
-	@Temporal(TemporalType.TIMESTAMP)
-	@Column(name="updated_at")
-	private Date updatedAt;
-
 	public Product() {
+	}
+	
+	public Product(String name, float pricing, byte published, String icon, float ratingCache, int ratingCount, String shortDescription, String longDescription){
+		setName(name);
+		setPricing(pricing);
+		setPublished(published);
+		setIcon(icon);
+		setRatingCache(ratingCache);
+		setRatingCount(ratingCount);
+		setShortDescription(shortDescription);
+		setLongDescription(longDescription);
 	}
 
 	public int getId() {
@@ -56,14 +59,6 @@ public class Product implements Serializable {
 
 	public void setId(int id) {
 		this.id = id;
-	}
-
-	public Date getCreatedAt() {
-		return this.createdAt;
-	}
-
-	public void setCreatedAt(Date createdAt) {
-		this.createdAt = createdAt;
 	}
 
 	public String getIcon() {
@@ -128,14 +123,6 @@ public class Product implements Serializable {
 
 	public void setShortDescription(String shortDescription) {
 		this.shortDescription = shortDescription;
-	}
-
-	public Date getUpdatedAt() {
-		return this.updatedAt;
-	}
-
-	public void setUpdatedAt(Date updatedAt) {
-		this.updatedAt = updatedAt;
 	}
 
 }

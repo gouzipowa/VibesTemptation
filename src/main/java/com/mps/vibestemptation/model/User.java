@@ -20,10 +20,6 @@ public class User implements Serializable {
 
 	private int age;
 
-	@Temporal(TemporalType.TIMESTAMP)
-	@Column(name="created_at")
-	private Date createdAt;
-
 	private String email;
 
 	private String firstname;
@@ -33,10 +29,6 @@ public class User implements Serializable {
 	private String nickname;
 
 	private String password;
-
-	@Temporal(TemporalType.TIMESTAMP)
-	@Column(name="updated_at")
-	private Date updatedAt;
 
 	@Column(name="user_type")
 	private int userType;
@@ -58,14 +50,6 @@ public class User implements Serializable {
 
 	public void setAge(int age) {
 		this.age = age;
-	}
-
-	public Date getCreatedAt() {
-		return this.createdAt;
-	}
-
-	public void setCreatedAt(Date createdAt) {
-		this.createdAt = createdAt;
 	}
 
 	public String getEmail() {
@@ -106,14 +90,6 @@ public class User implements Serializable {
 
 	public void setPassword(String password) {
 		this.password = password;
-	}
-
-	public Date getUpdatedAt() {
-		return this.updatedAt;
-	}
-
-	public void setUpdatedAt(Date updatedAt) {
-		this.updatedAt = updatedAt;
 	}
 
 	public int getUserType() {
