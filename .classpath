@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
 	<classpathentry kind="src" path="src/main/java"/>
-	<classpathentry kind="src" path="src/main/webapp"/>
 	<classpathentry kind="src" path="src/main/resources"/>
 	<classpathentry kind="src" path="src/test/java"/>
 	<classpathentry kind="src" path="src/test/resources"/>
@@ -24,5 +23,7 @@
 			<attribute name="owner.project.facets" value="jpt.jpa"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="D:/Programs/GitHub/Projects/Misys/VibesTemptationTest/WebContent/WEB-INF/lib/spring-webmvc-3.0.3.RELEASE.jar"/>
+	<classpathentry kind="lib" path="D:/Programs/GitHub/Projects/Misys/VibesTemptationTest/WebContent/WEB-INF/lib/spring-web-3.0.3.RELEASE.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>
