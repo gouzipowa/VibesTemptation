@@ -16,7 +16,6 @@
 	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
-	<classpathentry kind="lib" path="src/main/webapp/WEB-INF/lib/mysql-connector-java-5.1.34-bin.jar"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/hibernate-library">
 		<attributes>
 			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
@@ -25,5 +24,6 @@
 	</classpathentry>
 	<classpathentry kind="lib" path="D:/Programs/GitHub/Projects/Misys/VibesTemptationTest/WebContent/WEB-INF/lib/spring-webmvc-3.0.3.RELEASE.jar"/>
 	<classpathentry kind="lib" path="D:/Programs/GitHub/Projects/Misys/VibesTemptationTest/WebContent/WEB-INF/lib/spring-web-3.0.3.RELEASE.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/mysql-connector-java-5.1.34-bin.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>
